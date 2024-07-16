@@ -963,31 +963,6 @@ a {
     border-color: #EEEEEE;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Sección de información */
 .info-section {
     display: flex;
@@ -1016,7 +991,7 @@ a {
     margin-bottom: 10px;
 }
 .info-text h1 {
-    font-size: 2.4em;
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -1052,16 +1027,34 @@ a {
 .info-logos {
     background-color: white;
     width: 60%;
-    padding: 20px;
+    padding: 80px;
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
     justify-content: center;
+    grid-gap: 20px;
+}
+
+.info-logos img {
+    max-width: 100px;
+    width: 200%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-text {
+        width: 100%;
+        height: auto;
+        padding: 10px;
 }
 .info-logos img {
     max-width: 100px;
-    margin: 10px;
+    width: 200px;
+    height: auto;
+}
 }
 /* Ajustes responsivos */
 @media (max-width: 768px) {
@@ -1080,4 +1073,46 @@ a {
         width: 100%;
         padding: 10px;
     }
+}
+
+.precios{
+    align-self: center;
+    display: flex;
+   
+    justify-content: space-around;
+
+    align-items: center;
+    align-content: center;
+    width: fit-content;
+    margin: auto;
+    padding: 1%;
+    border-style: solid;
+    border-color: #929496;
+    width: 80%;
+}
+
+.precio{
+    width: 30%;
+    height:30%;
+    overflow: hidden;
+    position: relative;
+    perspective: 1000px; /* Añade profundidad para la animación 3D */
+    border-style: solid;
+    padding: 4%;
+    
+    margin: 0 10px; /* Espacio entre las cajas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precio-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.precio:hover .precio-image {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen */
 }
