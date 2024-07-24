@@ -1,7 +1,7 @@
 const translations = {
   "es": {
     "Inicio": "Inicio",
-    "SobreNosotros": "Sobre Nosotros",
+    "sobreNosotros": "Sobre Nosotros",
     "Servicios": "Servicios",
     "SuministrosElectricos": "Suministros Eléctricos",
     "TelefoniaMovil": "Telefonía Movil",
@@ -24,7 +24,11 @@ const translations = {
     "reparaciones": "Reparaciones",
     "energiasRenovables": "Energías Renovables",
     "gestionIntegral": "Gestión Integral",
+    "puntosderecarga":"Puntos de Recarga",
+    "alarmaAdt":"Alarmas ADT",
     "asesoramientoInmoviliario": "Acesoramiento Inmoviliario",
+    "seguros":"seguros",
+    "telecomunicaciones":"Telecomunicaciones",
     "envianosEmail": "Envianos un email",
     "llamanos": "Llamanos",
     "añosDeExperiencia": "Años de experiencia",
@@ -113,7 +117,7 @@ const translations = {
   },
   "en": {
     "Inicio": "Home",
-    "SobreNosotros": "About Us",
+    "sobreNosotros": "About Us",
     "Servicios": "Services",
     "SuministrosElectricos": "Electric Supplies",
     "TelefoniaMovil": "Mobile Telephony",

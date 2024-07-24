@@ -4,12 +4,20 @@
     --light: #F5F5F5;
     --dark: #212529;
 }
+
+
 body {
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.montserrat-1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+  }
 p {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -23,8 +31,6 @@ p {
     bottom: 30px;
     z-index: 99;
 }
-
-
 
 /* Button */
 .btn {
@@ -52,7 +58,11 @@ p {
     width: 48px;
     height: 48px;
 }
-
+/* Imagen y mapa responsivos */
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
@@ -92,14 +102,9 @@ p {
     height: 75px;
 }
 
-
 .navbar-brand img {
     height: 100%;
 }
-
-
-
-
 
 .navbar-nav .nav-link {
     margin-right: 35px;
@@ -111,9 +116,6 @@ p {
     outline: none;
 }
 
-
-
-
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: #cdcbe7;
@@ -123,7 +125,6 @@ p {
     align-self: center;
 }
 
-
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -132,7 +133,6 @@ p {
     vertical-align: middle;
     margin-left: 25%;
 }
-
 
 /* Dropdown menu */
 @media (min-width: 992px) {
@@ -149,11 +149,8 @@ p {
         top: 100%;
         visibility: visible;
         transition: .5s;
-       
     }
 }
-
-
 
 /* Main navigation background color correction */
 #mainNav {
@@ -162,17 +159,6 @@ p {
     padding: 0; /* Ajusta el padding si es necesario */
     width: auto; /* Ajusta el ancho si es necesario */
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
@@ -200,16 +186,11 @@ p {
     }
 }
 
-
-
-
-
-
-
 /* Video text adjustments */
 .video-container {
     position: relative;
-    width: 100%;
+    width:100%;
+    top: -30px;
     overflow: hidden;
 }
 
@@ -217,19 +198,6 @@ p {
     width: 100%;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .video-text {
     position: absolute;
@@ -240,7 +208,6 @@ p {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     z-index: 10;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Posiciones específicas para cada texto */
@@ -252,11 +219,10 @@ p {
     flex-direction: column;
     display: inline-block;
     padding: 1px;
-margin: 1px;
+    margin: 1px;
     font-size: 3vw;
-
 }
-
+/*  */
 #textovideo12 {
     top: 57%;
     left: 20%;
@@ -269,10 +235,10 @@ margin: 1px;
     font-size: 3vw;
     border: 3px;
 }
-
+/* lideres en asesoramiento energetico para tu hogar */
 #textovideo2 {
     align-items: center;
-    top: 85%;
+    top: 80%;
     left: 30%;
     width: 50%;
     color: #212529;
@@ -282,35 +248,35 @@ margin: 1px;
     text-align: center;
     font-size: 3vw;
 }
-
+/* proyectos solares  */
 #textovideo3 {
-    top: 18%;
+    top: 21%;
     left: 20%;
     font-size: 3vw;
 }
-
+/*putnos de recarga  */
 #textovideo4 {
     top: 50%;
-    left: 13%;
+    left: 17%;
     font-size: 3vw;
-    color:#324eed
+    color: #324eed; 
 }
-
+/* soluciones a medida */
 #textovideo5 {
-    top:86%;
+    top: 86%;
     left: 70%;
     color: #212529;
-    font-size: 3vw;
+    font-size: 2vw;
     width: 80%;
 }
-
+/*  */
 #textovideo6 {
     top: 73%;
     left: 30%;
     color: #ffffff;
     font-size: 3vw;
 }
-
+/*  */
 #textovideo7 {
     top: 50%;
     left: 50%;
@@ -323,8 +289,15 @@ margin: 1px;
     text-align: center;
 }
 
+
+
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
+    .video-text {
+        font-size: 1.5em; /* Ajusta el tamaño del texto para dispositivos móviles */
+    }
+
+
     .btn-play {
         left: 50%;
         right: auto;
@@ -359,12 +332,10 @@ margin: 1px;
 }
 
 .vid-emp {
-    
     backdrop-filter: blur(10px); /* Aplica un desenfoque al fondo */
     -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
     z-index: 1000;
     position: fixed;
-    z-index: 1000;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)); /* Degradado de opaco a transparente */
     left: 0;
     width: 100%;
@@ -585,7 +556,7 @@ margin: 1px;
 
 .service-item .service-img {
     position: absolute;
-    padding: 12px;
+    
     width: 130px;
     height: 130px;
     top: -65px;
@@ -769,22 +740,79 @@ margin: 1px;
 }
 
 /* Team */
-.team-item .team-social {
-    position: absolute;
+
+.container {
+    padding: 2px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2px;
+}
+
+.team-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    display: flex;
-    align-items: center;
-    background: var(--primary);
-    transition: .5s;
+    max-width: 200px;
+    margin: auto;
 }
 
-.team-item:hover .team-social {
-    left: 0;
+.team-card:hover {
+    transform: scale(1.05);
 }
 
+.team-img {
+    width: 100%;
+    height: auto;
+}
+
+.team-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.team-info h5 {
+    margin: 10px 0;
+    font-size: 1em;
+    color: var(--dark); /* Asegura que el texto sea visible */
+}
+
+.team-info span {
+    color: var(--primary);
+    font-size: 0.9em;
+}
+
+.team-social {
+    margin-top: 10px;
+}
+
+.team-social a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.team-social a:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 @media (min-width: 768px) {
@@ -892,10 +920,9 @@ margin: 1px;
 
 /* Other styles */
 .button {
-    position: absolute; /* Cambiado de fixed a absolute */
-   
+    position: absolute;
     top: 50%;
-    left: 25%;
+    left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: flex-start;
@@ -908,7 +935,6 @@ margin: 1px;
     background: url("../img/spain.jpg") no-repeat center;
     background-size: cover;
     z-index: 1002;
-
 }
 
 .circle {
@@ -921,15 +947,21 @@ margin: 1px;
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .button {
+        top: 50%; /* Asegura que esté centrado verticalmente en móviles */
+        left: 50%; /* Asegura que esté centrado horizontalmente en móviles */
+        transform: translate(-50%, -50%); /* Centra el botón */
+        max-height: 40px; /* Ajusta la altura para móviles */
+        min-height: 40px; /* Ajusta la altura mínima para móviles */
+        min-width: 80px; /* Ajusta el ancho mínimo para móviles */
+        background-size: cover;
+    }
 
-.circle {
-    --b: rgba(255, 255, 255, .7);
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    transition: 0.5s;
-    background: var(--b);
-    cursor: pointer;
+    .circle {
+        height: 30px; /* Ajusta la altura del círculo para móviles */
+        width: 30px; /* Ajusta el ancho del círculo para móviles */
+    }
 }
 .on {
     background: url("../img/ingla.jpg") no-repeat center center;
@@ -967,9 +999,11 @@ a {
 .info-section {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin-top: 0; /* Elimina el espacio superior */
+    width:100%;
+    margin-top: 0px 0px 0px -40px; /* Elimina el espacio superior */
     padding: 8px;
+    align-items: center;
+    justify-items: center;
     
 }
 
@@ -981,65 +1015,75 @@ a {
 .info-text {
     background-color: black;
     color: white;
-    width: 40%;
-    height: 60vh;
+    width: 100%;
     padding: 20px;
     box-sizing: border-box;
+
 }
+
 .info-text h1, .info-text h2, .info-text h3 {
     color: white;
     margin-bottom: 10px;
 }
+
 .info-text h1 {
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 15px;
 }
+
 .info-text p {
     font-size: 1.2em;
     margin-top: 10px;
     font-weight: lighter; /* Reducir grosor del texto */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .info-text h2 {
     font-size: 2em;
     font-weight: bold;
     margin-top: 20px;
 }
+
 .step i {
     color: red; /* Color rojo para los iconos */
     margin-right: 10px;
 }
+
 .step {
     display: flex;
     align-items: flex-start;
     margin-top: 15px;
 }
+
 .step .icon {
     font-size: 2.5em;
     margin-right: 10px;
 }
+
 .step h3 {
     font-size: 1em;
     font-weight: bold;
     margin: 0;
 }
+
 .info-logos {
     background-color: white;
+    left:40px;
     width: 60%;
     padding: 80px;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 2fr));
     align-items: center;
     justify-content: center;
-    grid-gap: 20px;
+    grid-gap: 40px;
 }
 
 .info-logos img {
     max-width: 100px;
-    width: 200%;
+    width: 100%;
     height: auto;
 }
 
@@ -1049,38 +1093,29 @@ a {
         width: 100%;
         height: auto;
         padding: 10px;
-}
-.info-logos img {
-    max-width: 100px;
-    width: 200px;
-    height: auto;
-}
-}
-/* Ajustes responsivos */
-@media (max-width: 768px) {
-    .info-text {
-        width: 100%;
-        height: auto;
-        padding: 10px;
     }
+
     .info-text h1 {
         font-size: 1.2em;
     }
+
     .info-text p, .info-text h2, .info-text h3 {
         font-size: 0.9em;
     }
+
     .info-logos {
         width: 100%;
         padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 10px;
     }
 }
 
-.precios{
+.precios {
     align-self: center;
     display: flex;
-   
     justify-content: space-around;
-
     align-items: center;
     align-content: center;
     width: fit-content;
@@ -1091,15 +1126,14 @@ a {
     width: 80%;
 }
 
-.precio{
+.precio {
     width: 30%;
-    height:30%;
+    height: 30%;
     overflow: hidden;
     position: relative;
     perspective: 1000px; /* Añade profundidad para la animación 3D */
     border-style: solid;
     padding: 4%;
-    
     margin: 0 10px; /* Espacio entre las cajas */
     display: flex;
     align-items: center;
@@ -1115,4 +1149,37 @@ a {
 
 .precio:hover .precio-image {
     transform: scale(1.2); /* Aumenta el tamaño de la imagen */
+}
+
+
+/* Estilos generales */
+.container-xxl {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 100%;
+}
+
+
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para las columnas */
+.col-6, .col-lg-6 {
+    flex: 1 0 50%; /* Asegura que las columnas ocupen el 50% del contenedor */
+}
+
+@media (max-width: 768px) {
+    .col-6, .col-lg-6 {
+        flex: 1 0 100%; /* Asegura que las columnas ocupen el 100% del contenedor en pantallas pequeñas */
+    }
+}
+/* Estilo específico para el iframe del mapa */
+.map-iframe {
+    min-height: 400px;
+    min-width: 400px;
 }
