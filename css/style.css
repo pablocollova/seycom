@@ -1205,10 +1205,6 @@ a {
 
 
 
-map-iframe {
-    width: 100%;
-    height: auto;
-}
 
 /* Estilo para las columnas */
 .col-6, .col-lg-6 {
@@ -1222,6 +1218,9 @@ map-iframe {
 }
 /* Estilo específico para el iframe del mapa */
 .map-iframe {
-    min-height: 400px;
-    min-width: 400px;
+  width: auto;
+  height:222px ;
+}
+col{
+    margin: 0 auto;
 }
