@@ -200,26 +200,12 @@ p {
     width: 80%;
     display: block;
 }
-@media (max-width:768px){
-    .video-container{
-        width: 100%;
-    }
-}
-.video-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: 10;
-}
 
 /* Posiciones específicas para cada texto */
 #textovideo1 {
+  
     top: 40%;
-    left: 20%;
+    left: 30%;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -229,9 +215,10 @@ p {
     font-size: 3vw;
 }
 /*  */
+
 #textovideo12 {
     top: 57%;
-    left: 20%;
+    left: 30%;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -245,7 +232,7 @@ p {
 #textovideo2 {
     align-items: center;
     top: 80%;
-    left: 30%;
+    left: 40%;
     width: 50%;
     color: #212529;
     background-color: rgba(244, 245, 247, 0.4);
@@ -257,20 +244,20 @@ p {
 /* proyectos solares  */
 #textovideo3 {
     top: 21%;
-    left: 20%;
+    left: 30%;
     font-size: 3vw;
 }
 /*putnos de recarga  */
 #textovideo4 {
-    top: 50%;
-    left: 17%;
+    top: 45%;
+    left: 27%;
     font-size: 3vw;
     color: #324eed; 
 }
 /* soluciones a medida */
 #textovideo5 {
     top: 86%;
-    left: 70%;
+    left: 80%;
     color: #212529;
     font-size: 2vw;
     width: 80%;
@@ -278,7 +265,7 @@ p {
 /*  */
 #textovideo6 {
     top: 73%;
-    left: 30%;
+    left: 40%;
     color: #ffffff;
     font-size: 3vw;
 }
@@ -294,6 +281,90 @@ p {
     justify-content: center;
     text-align: center;
 }
+
+@media (max-width:768px){
+    .video-container{
+        width: 100%;
+    }
+    #textovideo12 {
+        top: 57%;
+        left: 20%;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 3vw;
+        border: 3px;
+    }
+    /* lideres en asesoramiento energetico para tu hogar */
+    #textovideo2 {
+        align-items: center;
+        top: 80%;
+        left: 30%;
+        width: 50%;
+        color: #212529;
+        background-color: rgba(244, 245, 247, 0.4);
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 3vw;
+    }
+    /* proyectos solares  */
+    #textovideo3 {
+        top: 21%;
+        left: 20%;
+        font-size: 3vw;
+    }
+    /*putnos de recarga  */
+    #textovideo4 {
+        top: 50%;
+        left: 17%;
+        font-size: 3vw;
+        color: #324eed; 
+    }
+    /* soluciones a medida */
+    #textovideo5 {
+        top: 86%;
+        left: 70%;
+        color: #212529;
+        font-size: 2vw;
+        width: 80%;
+    }
+    /*  */
+    #textovideo6 {
+        top: 73%;
+        left: 30%;
+        color: #ffffff;
+        font-size: 3vw;
+    }
+    /*  */
+    #textovideo7 {
+        top: 50%;
+        left: 50%;
+        height: 40%;
+        font-size: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 10;
+}
+
+
 
 
 
@@ -322,7 +393,97 @@ p {
     .service-item .service-text {
         padding: 40px 20px;
     }
+
+
+
 }
+
+@media (max-width:768px){
+    .video-container{
+        width: 100%;
+    }
+        /* Posiciones específicas para cada texto */
+        #textovideo1 {  
+            top: 40%;
+            left: 20%;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            display: inline-block;
+            padding: 1px;
+            margin: 1px;
+            font-size: 3vw;
+        }
+        /*  */
+    #textovideo12 {
+        top: 57%;
+        left: 20%;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 3vw;
+        border: 3px;
+    }
+    /* lideres en asesoramiento energetico para tu hogar */
+    #textovideo2 {
+        align-items: center;
+        top: 80%;
+        left: 30%;
+        width: 50%;
+        color: #212529;
+        background-color: rgba(244, 245, 247, 0.4);
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 3vw;
+    }
+    /* proyectos solares  */
+    #textovideo3 {
+        top: 21%;
+        left: 20%;
+        font-size: 3vw;
+    }
+    /*putnos de recarga  */
+    #textovideo4 {
+        top: 50%;
+        left: 17%;
+        font-size: 3vw;
+        color: #324eed; 
+    }
+    /* soluciones a medida */
+    #textovideo5 {
+        top: 86%;
+        left: 60%;
+        color: #212529;
+        font-size: 2vw;
+        width: 80%;
+    }
+    /*  */
+    #textovideo6 {
+        top: 73%;
+        left: 20%;
+        color: #ffffff;
+        font-size: 3vw;
+    }
+    /*  */
+    #textovideo7 {
+        top: 50%;
+        left: 40%;
+        height: 40%;
+        font-size: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
+
+
 
 /* whatsapp */
 .whatsapp-button {
@@ -1111,7 +1272,7 @@ a {
    
     align-items: center;
     justify-content: center;
-    grid-gap: 40px;
+    grid-gap: 60px;
 }
 
 .info-logos img {
