@@ -140,3 +140,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var form = event.target;
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+        method: form.method,
+        body: formData,
+    })
+    .then(response => response.text())
+    .then(result => {
+        document.getElementById('status').textContent = 'Mensaje enviado correctamente';
+        form.reset();
+    })
+    .catch(error => {
+        document.getElementById('status').textContent = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
+    });
+});

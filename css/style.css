@@ -10,7 +10,66 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    
+  
+    height: 100vh;
+    margin: 0;
 }
+
+
+/**trabaja con nosotros start**/
+.container-trabaja {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+
+/**trabaja con nosotros end**/
+
 
 .montserrat-1 {
     font-family: "Montserrat", sans-serif;
@@ -19,7 +78,7 @@ body {
     font-style: normal;
   }
 p {
-    font-family: "Roboto", sans-serif;
+    font-family:'montserrat', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -128,7 +187,7 @@ p {
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'montserrat', sans-serif;;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 25%;
@@ -363,8 +422,6 @@ p {
     transition: opacity 1s ease-in-out;
     z-index: 10;
 }
-
-
 
 
 
@@ -1078,7 +1135,7 @@ p {
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'montserrat', sans-serif;
     font-weight: 900;
     margin-right: 10px;
 }
@@ -1164,7 +1221,7 @@ a {
 }
 
 .titulovideo {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 5rem;
     font-weight: bolder;
     color: #eeeff3;
@@ -1213,7 +1270,7 @@ a {
     font-size: 1.2em;
     margin-top: 10px;
     font-weight: lighter; /* Reducir grosor del texto */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
 .info-text h2 {
@@ -1231,6 +1288,7 @@ a {
     display: flex;
     align-items: flex-start;
     margin-top: 15px;
+    padding: 2%;
 }
 
 .step .icon {
@@ -1239,7 +1297,7 @@ a {
 }
 
 .step h3 {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     margin: 0;
 }

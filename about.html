@@ -1,385 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <title>Industro - Industrial HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="utf-8">
+  <title>SEYCOM</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <!-- -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--agregando fuente montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+
+
+  <!-- Navbar Start -->
+
+  <nav class=" navbar-expand-lg navbar-light sticky-top py-0 pe-5 navbar">
+    <a href="index.html" class="navbar-brand ps-5 me-0">
+      <img style="height: 100%; z-index: 1001;" src="img/logo.png" alt="Logo">
+    </a>
+    <div id="buttonIdioma" class="button">
+      <div class="circle" title="Toggle Language"></div>
     </div>
-    <!-- Spinner End -->
+
+    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse vid-emp navbar-collapse  " id="navbarCollapse">
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-white">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
-                    <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span class="fs-5 fw-bold">+012 345 6789</span>
-                </div>
-            </div>
+
+
+      <div class="navbar-nav ms-auto p-4 p-lg-0" id="mainNav">
+
+        <a href="about.html" class="nav-item nav-link active" data-lang="sobreNosotros"></a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-lang="Servicios"></a>
+          <div class="dropdown-menu bg-light m-0">
+            <a href="project.html" class="dropdown-item" data-lang="luz y gas"></a>
+            <a href="feature.html" class="dropdown-item" data-lang="TelefoniaMovil"></a>
+            <a href="team.html" class="dropdown-item" data-lang="Telecomunicaciones y Alarmas"></a>
+            <a href="testimonial.html" class="dropdown-item" data-lang="PanelesSolares"></a>
+          </div>
         </div>
+        <a href="contact.html" class="nav-item nav-link" data-lang="Contacto"></a>
+        <a href="https://seycom.nodogestion.com/login" class="nav-item nav-link active">Zona Distribuidor</a>
+      </div>
     </div>
-    <!-- Topbar End -->
+  </nav>
 
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <a href="index.html" class="navbar-brand ps-5 me-0">
-            <h1 class="text-white m-0">Industro</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="project.html" class="dropdown-item">Projects</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
 
+  <!-- Navbar End -->
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <h1 class="display-3 text-white animated slideInRight">About Us</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb animated slideInRight mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                </ol>
-            </nav>
-        </div>
+  <div class="whatsapp-button">
+    <a href="https://wa.me/+34623398752" target="_blank">
+      <img src="./images/wsap-ico.png" alt="WhatsApp">
+    </a>
+  </div>
+
+  <div class="video-container">
+    <video id="video" autoplay loop muted>
+      <source src="images/VIDEO.mp4" type="video/mp4">
+    </video>
+    <div id="textovideo1" class="video-text montserrat-1" data-start="0" data-end="3">
+      <p data-lang="section1part1" style="font-size: 5vw; left: 40%;">#1</p>
+      <p data-lang="section1part2" style="font-size: 4vw;" class="montserrat-1">Asesoría Energética</p>
     </div>
-    <!-- Page Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="row gx-3 h-100">
-                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-1.jpg">
-                        </div>
-                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-2.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="fw-medium text-uppercase text-primary mb-2">About Us</p>
-                    <h1 class="display-5 mb-4">We Are Leader In Industrial Market</h1>
-                    <p class="mb-4">Asesoría Integral de Energía y Servicios Adicionales
-                        En Seycom, cubrimos toda la Costa del Sol con un enfoque distintivo. Nos destacamos por ofrecer un servicio de alta calidad, transparente y personalizado a administradores de fincas, empresas y particulares.
-                        
-                        Nos especializamos en optimizar el consumo energético de tu negocio, reducir costos y contribuir al cuidado del medio ambiente. Ya sea que desees incorporar sistemas de energía renovable, realizar auditorías energéticas o mejorar la eficiencia de tus instalaciones, estamos aquí para ayudarte.
-                        
-                        Además, proporcionamos asesoría en gas y una variedad de servicios adicionales como telecomunicaciones, alarmas ADT, seguros y puntos de recarga para coches eléctricos. De esta manera, ofrecemos un servicio completo para tu negocio u hogar, siempre buscando brindarte la solución más integral.
-                        
-                        Nuestros servicios están diseñados para maximizar tus ahorros, siempre estando de tu lado. Trabajamos contigo para identificar oportunidades de mejora, desarrollar estrategias efectivas y asegurar un retorno de inversión óptimo. Permítenos ayudarte a alcanzar tus objetivos de eficiencia energética con un enfoque personalizado.</p>
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="flex-shrink-0 bg-primary p-4">
-                            <h1 class="display-2">25</h1>
-                            <h5 class="text-white">Years of</h5>
-                            <h5 class="text-white">Experience</h5>
-                        </div>
-                        <div class="ms-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Power & Energy</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Civil Engineering</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Chemical Engineering</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Mechanical Engineering</p>
-                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Oil & Gas Engineering</p>
-                        </div>
-                    </div>
-                    <div class="row pt-2">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-envelope-open text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <p class="mb-2">Email us</p>
-                                    <h5 class="mb-0">info@example.com</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-phone-alt text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <p class="mb-2">Call us</p>
-                                    <h5 class="mb-0">+012 345 6789</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="textovideo12" class="video-text" data-start="2" data-end="3">
+      <p data-lang="section2part1" class="montserrat-1">EN COSTA DEL SOL</p>
     </div>
-    <!-- About End -->
-
-
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 p-5">
-        <div class="row g-5">
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">25</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Years Experience</span>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">135</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Team Members</span>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-users fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">957</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Happy Clients</span>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">1839</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Projects Done</span>
-                </div>
-            </div>
-        </div>
+    <div id="textovideo2" class="video-text" data-start="4" data-end="7">
+      <p data-lang="section3part1" class="montserrat-1">Líderes en asesoramiento </p>
+      <p data-lang="section3part2" class="montserrat-1">energético para tu hogar</p>
     </div>
-    <!-- Facts End -->
-
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">Our Team</p>
-                <h1 class="display-5 mb-5">Dedicated Team Members</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
-                                <i class="fa fa-2x fa-share text-white"></i>
-                            </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4" style="height: 90px;">
-                                <h5>Rob Miller</h5>
-                                <span class="text-primary">CEO & Founder</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>                                                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
-                                <i class="fa fa-2x fa-share text-white"></i>
-                            </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4" style="height: 90px;">
-                                <h5>Adam Crew</h5>
-                                <span class="text-primary">Project Manager</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-square bg-primary" style="width: 90px; height: 90px;">
-                                <i class="fa fa-2x fa-share text-white"></i>
-                            </div>
-                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4" style="height: 90px;">
-                                <h5>Peter Farel</h5>
-                                <span class="text-primary">Engineer</span>
-                                <div class="team-social">
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="textovideo3" class="video-text" data-start="8" data-end="13">
+      <p data-lang="section4part1" class="montserrat-1">Proyectos solares para</p>
+      <p data-lang="section4part2" class="montserrat-1">Empresas y comunidades</p>
     </div>
-    <!-- Team End -->
+    <div id="textovideo4" class="video-text" data-start="14" data-end="20">
+      <p data-lang="section5part1" class="montserrat-1">Puntos de</p>
+      <p data-lang="section5part2" class="montserrat-1">recarga para</p>
+      <p data-lang="section5part3" class="montserrat-1">vehículos</p>
+    </div>
+    <div id="textovideo5" class="video-text" data-start="21" data-end="24">
+      <p data-lang="section6part1" class="montserrat-1">Soluciones a medida maximizando la</p>
+      <p data-lang="section6part2" class="montserrat-1">eficiencia energética y los ahorros</p>
+    </div>
+    <div id="textovideo6" class="video-text" data-start="27" data-end="36">
+      <p data-lang="section7part1" class="montserrat-1">Compromiso con la</p>
+      <p data-lang="section7part2" class="montserrat-1">sostenibilidad</p>
+    </div>
+    <div id="textovideo7" class="video-text" data-start="37" data-end="41">
+      <img style="height: 100%;" src="img/logo.png" alt="Logo">
+      <p data-lang="section8part1">Tu Asesor Energético</p>
+    </div>
 
 
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
+  </div>
+
+
+
+
+  <!-- About Start -->
+  <div class="container-fluid" style="background-color: rgb(255, 255, 255);">
+    <div class="row g-5">
+      <div class="col-lg-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+        <img class="img-fluid" src="./images/WhatsApp_Isss4.01-removebg-preview.png">
+      </div>
+
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+        <p class="fw-medium text-uppercase text-primary mb-2" data-lang="sobreNosotros">Sobre Nosotros</p>
+        <h1 class="display-5 mb-4" data-lang="somosLideresEnConfianza">Somos Lideres en Confianza</h1>
+        <p class="mb-4" data-lang="teAsesoramos">te asesoramos y solucionamos cualquier tipo de inconveniente</p>
+        <div class="d-flex align-items-center mb-4">
+          <div class="flex-shrink-0 bg-primary p-4">
+            <h1 class="display-2">+10</h1>
+            <h5 class="text-white" data-lang="añosDe">años de </h5>
+            <h5 class="text-white" data-lang="experiencia">Experiencia</h5>
+          </div>
+          <div class="ms-4">
+            <p><i class="fa fa-check text-primary me-2"></i><span data-lang="serviciosYComunicaciones">ENERGÍA, GAS Y TELECOMUNICACIONES</span></p>
+            <p><i class="fa fa-check text-primary me-2"></i><span data-lang="altas y bajas">ALTAS, BAJAS, MODIFICACIONES Y RESOLUCION DE INCIDENCIAS</span></p>
+            <p><i class="fa fa-check text-primary me-2"></i><span data-lang="energiasRenovables">PUNTOS DE RECARGA</span></p>
+            <!--<p><i class="fa fa-check text-primary me-2"></i><span data-lang="puntosderecarga">PUNTOS DE RECARGA</span></p>-->
+            <!--<p><i class="fa fa-check text-primary me-2"></i><span data-lang="gestionIntegral">gestion Integral</span></p>-->
+            <p><i class="fa fa-check text-primary me-2"></i><span data-lang="puntosderecarga">PUNTOS DE RECARGA</span></p>
+            <p><i class="fa fa-check text-primary me-2"></i><span data-lang="seguros">SEGUROS</span></p>
+            <!-- <p><i class="fa fa-check text-primary me-2"></i><span data-lang="telecomunicaciones">TELECOMUNICACIONES</span></p>-->
+            <!--<p class="mb-0"><i class="fa fa-check text-primary me-2"></i><span data-lang="asesoramientoInmoviliario">Acesoramiento Inmoviliario</span></p>-->
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                <i class="fa fa-envelope-open text-white"></i>
+              </div>
+              <div class="ms-3">
+                <p class="mb-2" data-lang="envianosEmail">Envianos un email</p>
+                <h5 class="mb-0">administracion@seycom.info</h5>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-        
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Our Office</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+          </div>
+          <div class="row pt-2">
+
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                  <i class="fa fa-phone-alt text-white"></i>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                <div class="ms-3">
+                  <p class="mb-2" data-lang="llamanos">Llamanos</p>
+                  <h5 class="mb-0">+34 681 96 67 29</h5>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Business Hours</h5>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Newsletter</h5>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+
+
+
+
+      </div>
     </div>
-    <!-- Footer End -->
+  </div>
 
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-        <div class="container text-center">
-            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">Your Site Name</a>, All Right Reserved.</p>
-            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            <p class="mb-0">Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+  <!-- About End -->
+
+
+  <div class=" container-fluid">
+    <h2>Trabaja con Nosotros</h2>
+    <form id="contactForm" action="send_email.php" method="post">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
         </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="status"></div>
+</div>
+<script src="script.js"></script>
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="footer-container">
+      <div class="row ">
+        <div class="col">
+          <h5 class="text-white mb-4" data-lang="nuestraOficina">Nuestra Oficina</h5>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><span>Av. Cdad. de Melilla, 24, 29631 Benalmádena, Málaga</span></p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><span>+34 681 96 67 29</span></p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i><span>administracion@seycom.info</span></p>
+          <div class="d-flex pt-3">
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="text-white mb-4" data-lang="enlacesRapidos">Enlaces Rapidos</h5>
+          <a class="btn btn-link" href="" data-lang="sobreNosotros">Sobre Nosotros</a>
+          <a class="btn btn-link" href="" data-lang="contacto">Contacto</a>
+          <a class="btn btn-link" href="" data-lang="nuestrosServicios">Nuestros Servicios</a>
+          <a class="btn btn-link" href="" data-lang="soporte">Soporte</a>
+        </div>
+        <div class="col">
+          <div class=" wow fadeIn" data-wow-delay="0.5s">
+            <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200.2023512306498!2d-4.533439934395211!3d36.59658573119049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fdeff865c523%3A0xd1b684b3072097c4!2sSeycom%20Energ%C3%ADa!5e0!3m2!1ses-419!2ses!4v1719397159584!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="text-white mb-4" data-lang="horarioAtencion">Horario de Atención</h5>
+          <p class="mb-1" data-lang="lunesJueves">Lunes - Jueves</p>
+          <h6 class="text-light">09:00 - 14:00 / 15:00 - 17:00</h6>
+          <p class="mb-1" data-lang="viernes">Viernes</p>
+          <h6 class="text-light">09:00 - 14:00</h6>
+          <p class="mb-1" data-lang="sabadosDomingos">Sabados y Domingos</p>
+          <h6 class="text-light" data-lang="cerrado">Cerrado</h6>
+        </div>
+
+      </div>
     </div>
-    <!-- Copyright End -->
+  </div>
+
+  <!-- Footer End -->
+
+  <!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright bg-dark py-4">
+    <div class="container text-center">
+      <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">SEYCOM</a>, All Right Reserved.</p>
+      <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+      <p class="mb-0">Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">PADME.DEV</a></p>
+    </div>
+  </div>
+  <!-- Copyright End -->
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script src="lang.js"></script>
+
+  <script>
+    document.querySelector("#buttonIdioma").addEventListener("click", () => {
+      document.querySelector("#buttonIdioma").classList.toggle("on");
+      document.querySelector(".circle").classList.toggle("c_on");
+      document.body.classList.toggle("b_on");
+
+      const lang = document.body.classList.contains("b_on") ? "en" : "es";
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.innerText = translations[lang][el.getAttribute("data-lang")];
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const lang = "es";
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.innerText = translations[lang][el.getAttribute("data-lang")];
+        el.setAttribute("data-lang-en", translations["en"][el.getAttribute("data-lang")]);
+      });
+    });
+  </script>
 </body>
 
 </html>
