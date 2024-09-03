@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $to = "pablocollova@gmail.com"; // Cambia esto por tu dirección de correo
+    $to = "administracion@seycom.info"; // Cambia esto por tu dirección de correo
     $subject = "Nuevo mensaje de contacto";
     $body = "Nombre: $name\nCorreo: $email\nMensaje:\n$message";
 
