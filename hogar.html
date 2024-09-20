@@ -38,53 +38,45 @@
 </head>
 
 <body>
-  <!-- Spinner Start -->
-  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-  </div>
-  <!-- Spinner End -->
-
-
-
   <!-- Navbar Start -->
 
-  <nav class="Navbar navbar-expand-lg navbar-light sticky-top py-0 pe-5 vid-emp ">
+  <nav class=" navbar-expand-lg navbar-light sticky-top py-0 pe-5 navbar">
     <a href="index.html" class="navbar-brand ps-5 me-0">
-      <img style="height: 100%;" src="img/logo.png" alt="Logo">
+      <img style="height: 100%; z-index: 1001;" src="img/logo.png" alt="Logo">
     </a>
-
-
+    <div id="buttonIdioma" class="button">
+      <div class="circle" title="Toggle Language"></div>
+    </div>
 
     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse " id="navbarCollapse">
-
-      <div id="buttonIdioma" class="button">
-        <div class="circle" title="Toggle Language"></div>
-      </div>
+    <div class="collapse vid-emp navbar-collapse  " id="navbarCollapse">
 
 
-      <div id="mainNav" class="navbar-nav ms-auto p-4 p-lg-0">
-        <a href="index.html" class="nav-item nav-link active" data-lang="Inicio"></a>
-        <a href="about.html" class="nav-item nav-link" data-lang="SobreNosotros"></a>
+
+
+      <div class="navbar-nav ms-auto p-4 p-lg-0" id="mainNav">
+
+        <a href="about.html" class="nav-item nav-link" data-lang="sobreNosotros"></a>
         <div class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-lang="Servicios"></a>
           <div class="dropdown-menu bg-light m-0">
-            <a href="project.html" class="dropdown-item" data-lang="SuministrosElectricos"></a>
+            <a href="project.html" class="dropdown-item" data-lang="luz y gas"></a>
             <a href="feature.html" class="dropdown-item" data-lang="TelefoniaMovil"></a>
-            <a href="team.html" class="dropdown-item" data-lang="ServiciosInmoviliarios"></a>
+            <a href="team.html" class="dropdown-item" data-lang="Telecomunicaciones y Alarmas"></a>
             <a href="testimonial.html" class="dropdown-item" data-lang="PanelesSolares"></a>
           </div>
         </div>
         <a href="contact.html" class="nav-item nav-link" data-lang="Contacto"></a>
+        <a href="https://seycom.nodogestion.com/login" class="nav-item nav-link active">Zona Distribuidor</a>
       </div>
     </div>
   </nav>
 
 
-  
+
   <!-- Navbar End -->
 
   <div class="whatsapp-button">
@@ -93,39 +85,95 @@
     </a>
   </div>
 
+  
 
 
-  <!-- Carousel Start -->
-  <div class="container-fluid">
-    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="video-container">
-                <video width="100%" controls autoplay loop muted>
-                    <source src="images/VIDEO.mp4" type="video/mp4"></video>
-                </div>    
-                <div class="carousel-caption">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10 text-start" style="color: antiquewhite;">
-                                <p class="   animated slideInRight titulovideo"  >Te Ayudamos con tus Facturas</p>
-                                     <h1 class="display-1 text-white animated slideInRight" >Nuestro servicio de asesoramiento integral para el hogar es completamente GRATUITO y está diseñado para ayudarte a optimizar tus gastos domésticos. Analizamos tus necesidades en diferentes áreas, incluyendo luz, gas, placas solares, seguros, alarmas, internet, móvil y financiación.
-                                    
-                                        Tras estudiar detalladamente tu tarifa actual, te enviaremos un estudio personalizado sin ningún coste, mostrando los resultados de ahorro que puedes obtener. Nuestro objetivo es proporcionarte las mejores soluciones para reducir tus gastos y mejorar la eficiencia en tu hogar</p>
-                                   </h1>
-                              </div>
-                        </div>
-                    </div>
+    <div class="servicios">
+        <div class="texto-servicio">
+            <p  >Te Ayudamos con tus Facturas</p>
+                 <h1>Nuestro servicio de asesoramiento integral para el hogar es 
+                  completamente GRATUITO y está diseñado para ayudarte a optimizar tus 
+                  gastos domésticos. Analizamos tus necesidades en diferentes áreas,
+                   incluyendo luz, gas, placas solares, seguros, alarmas, internet, 
+                   móvil y financiación.                
+                    Tras estudiar detalladamente tu tarifa actual, te enviaremos un 
+                    estudio personalizado sin ningún coste, mostrando los resultados 
+                    de ahorro que puedes obtener. Nuestro objetivo es proporcionarte
+                     las mejores soluciones para reducir tus gastos y mejorar la
+                      eficiencia en tu hogar
+               </h1>
+          </div>
+          <div class="formulario-contacto">
+            <div class=" container-fluid">
+              <h2>Contacto</h2>
+              <form id="contactForm" action="send_email.php" method="post"  enctype="multipart/form-data">
+                  <div class="form-group">
+                      <label for="name">Nombre</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Correo Electrónico</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Mensaje</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="file">Adjuntar archivo</label>
+                    <input type="file" id="file" name="file">
                 </div>
-            </div>
-        </div>
-      
+                  <button type="submit">Enviar</button>
+              </form>
+              <div id="status"></div>
+          </div>
+          </div>
     </div>
-</div>
-  <!-- Carousel End -->
 
+    
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="footer-container">
+      <div class="row ">
+        <div class="col">
+          <h5 class="text-white mb-4" data-lang="nuestraOficina">Nuestra Oficina</h5>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><span>Av. Cdad. de Melilla, 24, 29631 Benalmádena, Málaga</span></p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><span>+34 681 96 67 29</span></p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i><span>administracion@seycom.info</span></p>
+          <div class="d-flex pt-3">
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="text-white mb-4" data-lang="enlacesRapidos">Enlaces Rapidos</h5>
+          <a class="btn btn-link" href="" data-lang="sobreNosotros">Sobre Nosotros</a>
+          <a class="btn btn-link" href="" data-lang="contacto">Contacto</a>
+          <a class="btn btn-link" href="" data-lang="nuestrosServicios">Nuestros Servicios</a>
+          <a class="btn btn-link" href="" data-lang="soporte">Soporte</a>
+        </div>
+        <div class="col">
+          <div class=" wow fadeIn" data-wow-delay="0.5s">
+            <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200.2023512306498!2d-4.533439934395211!3d36.59658573119049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fdeff865c523%3A0xd1b684b3072097c4!2sSeycom%20Energ%C3%ADa!5e0!3m2!1ses-419!2ses!4v1719397159584!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="text-white mb-4" data-lang="horarioAtencion">Horario de Atención</h5>
+          <p class="mb-1" data-lang="lunesJueves">Lunes - Jueves</p>
+          <h6 class="text-light">09:00 - 14:00 / 15:00 - 17:00</h6>
+          <p class="mb-1" data-lang="viernes">Viernes</p>
+          <h6 class="text-light">09:00 - 14:00</h6>
+          <p class="mb-1" data-lang="sabadosDomingos">Sabados y Domingos</p>
+          <h6 class="text-light" data-lang="cerrado">Cerrado</h6>
+        </div>
 
+      </div>
+    </div>
+  </div>
 
+  <!-- Footer End -->
 
 
   <!-- Copyright Start -->
