@@ -87,49 +87,37 @@
 
   
 
-
-    <div class="servicios">
-        <div class="texto-servicio">
-            <p  >Te Ayudamos con tus Facturas</p>
-                 <h1>Nuestro servicio de asesoramiento integral para el hogar es 
-                  completamente GRATUITO y está diseñado para ayudarte a optimizar tus 
-                  gastos domésticos. Analizamos tus necesidades en diferentes áreas,
-                   incluyendo luz, gas, placas solares, seguros, alarmas, internet, 
-                   móvil y financiación.                
-                    Tras estudiar detalladamente tu tarifa actual, te enviaremos un 
-                    estudio personalizado sin ningún coste, mostrando los resultados 
-                    de ahorro que puedes obtener. Nuestro objetivo es proporcionarte
-                     las mejores soluciones para reducir tus gastos y mejorar la
-                      eficiencia en tu hogar
-               </h1>
-          </div>
-          <div class="formulario-contacto">
-            <div class=" container-fluid">
-              <h2>Contacto</h2>
-              <form id="contactForm" action="send_email.php" method="post"  enctype="multipart/form-data">
-                  <div class="form-group">
-                      <label for="name">Nombre</label>
-                      <input type="text" id="name" name="name" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="email">Correo Electrónico</label>
-                      <input type="email" id="email" name="email" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="message">Mensaje</label>
-                      <textarea id="message" name="message" rows="5" required></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="file">Adjuntar archivo</label>
-                    <input type="file" id="file" name="file">
-                </div>
-                  <button type="submit">Enviar</button>
-              </form>
-              <div id="status"></div>
-          </div>
-          </div>
+  <!-- Servicios y Contacto Start -->
+  <div class="servicios">
+    <div class="texto-servicio">
+      <h1>Te Ayudamos con tus Facturas</h1>
+      <p>Nuestro servicio de asesoramiento integral para el hogar es completamente GRATUITO y está diseñado para ayudarte a optimizar tus gastos domésticos. Analizamos tus necesidades en diferentes áreas, incluyendo luz, gas, placas solares, seguros, alarmas, internet, móvil y financiación.</p>
+      <p>Tras estudiar detalladamente tu tarifa actual, te enviaremos un estudio personalizado sin ningún coste, mostrando los resultados de ahorro que puedes obtener. Nuestro objetivo es proporcionarte las mejores soluciones para reducir tus gastos y mejorar la eficiencia en tu hogar.</p>
     </div>
-
+    <div class="formulario-contacto">
+      <h2>Contacto</h2>
+      <form id="contactForm" action="send_email.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="file" class="form-label">Adjuntar archivo</label>
+          <input type="file" id="file" name="file" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <!-- Servicios y Contacto End --> 
     
   <!-- Footer Start -->
   <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
