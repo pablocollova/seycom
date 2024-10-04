@@ -1,3 +1,41 @@
+fetch('../menu.html')
+.then(response => response.text())
+.then(data => {
+  document.getElementById('menu-placeholder').innerHTML = data;
+
+  const lang = document.body.classList.contains("b_on") ? "en" : "es";
+  document.querySelectorAll("[data-lang]").forEach(el => {
+      el.innerText = translations[lang][el.getAttribute("data-lang")];
+  });
+
+  document.querySelector("#buttonIdioma").addEventListener("click", () => {
+    document.querySelector("#buttonIdioma").classList.toggle("on");
+    document.querySelector(".circle").classList.toggle("c_on");
+    document.body.classList.toggle("b_on");
+
+    const lang = document.body.classList.contains("b_on") ? "en" : "es";
+    document.querySelectorAll("[data-lang]").forEach(el => {
+      el.innerText = translations[lang][el.getAttribute("data-lang")];
+    });
+  })
+  .catch(error => console.error('Error al cargar el menú:', error));
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const lang = "es";
+    document.querySelectorAll("[data-lang]").forEach(el => {
+      el.innerText = translations[lang][el.getAttribute("data-lang")];
+      el.setAttribute("data-lang-en", translations["en"][el.getAttribute("data-lang")]);
+    });
+  });
+
+});
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const video = document.getElementById('video');
     const textOverlays = document.querySelectorAll('.video-text');
@@ -159,3 +197,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('status').textContent = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
     });
 });
+

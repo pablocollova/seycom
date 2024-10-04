@@ -36,7 +36,7 @@
 
   <!-- Template Stylesheet -->
   <link href="css/fonts.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet?v=1.0">
+  <link href="css/style.css?v=1.0" rel="stylesheet">
   <!--agregando fuente montserrat-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,11 +49,7 @@
 
   <!-- Navbar Start -->
 
- <?php include'menu.php';?>
- <?php include 'menu.php'; ?>
-
-
-
+  <div id="menu-placeholder"></div>
   <!-- Navbar End -->
 
   <div class="whatsapp-button">
@@ -509,7 +505,7 @@ optimizacion de consumos-->
       </div>
 
       <div class="precio">
-        <a href="|https://www.omip.pt/es">
+        <a href="https://www.omip.pt/es">
           <img src="/img/logos/omip.png" alt="boton2" class="precio-image">
         </a>
       </div>
@@ -639,7 +635,6 @@ optimizacion de consumos-->
     </form>
     <div id="status"></div>
 </div>
-<script src="main.js"></script>
   <!-- Footer Start -->
   <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="footer-container">
@@ -713,29 +708,10 @@ optimizacion de consumos-->
   <script src="lib/counterup/counterup.min.js"></script>
 
   <!-- Template Javascript -->
-  <script src="js/main.js?v=1.0"></script>
+  <script src="js/main.js"></script>
   <script src="lang.js"></script>
 
-  <script>
-    document.querySelector("#buttonIdioma").addEventListener("click", () => {
-      document.querySelector("#buttonIdioma").classList.toggle("on");
-      document.querySelector(".circle").classList.toggle("c_on");
-      document.body.classList.toggle("b_on");
-
-      const lang = document.body.classList.contains("b_on") ? "en" : "es";
-      document.querySelectorAll("[data-lang]").forEach(el => {
-        el.innerText = translations[lang][el.getAttribute("data-lang")];
-      });
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const lang = "es";
-      document.querySelectorAll("[data-lang]").forEach(el => {
-        el.innerText = translations[lang][el.getAttribute("data-lang")];
-        el.setAttribute("data-lang-en", translations["en"][el.getAttribute("data-lang")]);
-      });
-    });
-  </script>
+ 
 </body>
 
 </html>
