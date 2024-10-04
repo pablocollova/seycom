@@ -1481,7 +1481,19 @@ col{
     padding: 40px;
     gap: 20px;
 }
-
+.empresas {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('/img/estaciondecarga.jpg'); /* Imagen de fondo */
+    background-color: var(--gray); /* Fondo claro para el contenedor general */
+    padding: 40px;
+    gap: 20px;
+}
 .renovables {
     background-size: cover;
     background-repeat: no-repeat;
